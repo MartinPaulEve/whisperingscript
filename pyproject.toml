@@ -9,10 +9,10 @@ description = "Browser automation script for whispering.bradenwong.com transcrip
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Martin Paul Eve", email = "martin@example.com"}
+    {name = "Martin Paul Eve", email = "martin@eve.gd"}
 ]
 maintainers = [
-    {name = "Martin Paul Eve", email = "martin@example.com"}
+    {name = "Martin Paul Eve", email = "martin@eve.gd"}
 ]
 keywords = ["automation", "transcription", "selenium", "browser", "whisper"]
 classifiers = [
@@ -49,10 +49,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/martin/whisperingscript"
-Repository = "https://github.com/martin/whisperingscript"
-Issues = "https://github.com/martin/whisperingscript/issues"
-Documentation = "https://github.com/martin/whisperingscript#readme"
+Homepage = "https://github.com/martinpauleve/whisperingscript"
+Repository = "https://github.com/martinpauleve/whisperingscript"
+Issues = "https://github.com/martinpauleve/whisperingscript/issues"
+Documentation = "https://github.com/martinpauleve/whisperingscript#readme"
 
 [project.scripts]
 whisperingscript = "whisperingscript.main:main"
@@ -103,3 +103,10 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 addopts = "--cov=whisperingscript --cov-report=term-missing --cov-report=html"
+
+[tool.commitizen]
+version = "0.1.0"
+version_files = [
+    "pyproject.toml:version"
+]
+update_changelog_on_bump = true
